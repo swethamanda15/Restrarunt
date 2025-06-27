@@ -1,0 +1,252 @@
+body {
+    font-family: "Spline Sans" , sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+ h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+ }
+
+ a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600 ;
+ }
+ a:hover{
+    color: #f58d17;
+ }
+
+ img {
+    width: 100%;
+ }
+
+ section {
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+ .shadow-on-hover {
+   transition: all 0.2s;
+ }
+ .shadow-on-hover:hover{
+   box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+ }
+
+ .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+ }
+ .btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color: #f58d17;
+    background-color: #f58d17;
+ }
+ .btn-brand:hover{
+      border-color: #d37810;
+    background-color: #ca7310;
+    color: #fff;
+ }
+.slide-1{
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cover1.avif);
+  
+}
+.slide-2{
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cover2.avif);
+
+}
+.bg-cover{
+   background-position: center !important;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+}
+
+/* #heroSlider h6::before,
+#heroSlider h6::after {
+   content: " ";
+   width: 20px;
+   height: 4px;
+   background-color: #ffffff;
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 10px;
+} */
+
+.heading-line {
+  color: white;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.heading-line::before,
+.heading-line::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+   background-color: rgba(0,0,0,0.6);
+   width: 40px;
+   height: 70px;
+   margin: auto;
+}
+
+ #about .divider{
+   width: 80px;
+   height: 2px;
+   display: block;
+   background-color: #f58d17;
+} 
+
+.intro-text {
+   margin-bottom: 40px;
+   text-align: center;
+}
+.intro-text p{
+   max-width: 500px;
+   margin: 16px auto 0px auto;
+}
+
+#menu .nav-pills .nav-link {
+   background-color: #fff;
+   margin-left: 8px;
+   margin-right: 8px;
+   color: #222;
+   border-radius: 100px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+#menu .nav-pills .nav-link.active {
+   background-color: #f58d17;
+   color: #fff;
+}
+.menu-item .stars{
+   color: #f58d17;
+}
+
+#features {
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cover2.avif);
+}
+.feature {
+   border: 2px solid rgba(255,255,255,0.2);
+}
+.feature-icon{
+   width: 80px;
+   height: 80px;
+   background-color: #f58d17;
+   color: #fff;
+   font-size: 28px;
+   display: inline-grid;
+   align-content: center;
+   text-align: center;
+}
+.he {
+   max-width: 250px;
+   box-shadow: -10px -10px 0 #f58d17;
+   border-radius: 50%;
+}
+#reviews {
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(clents.avif);
+
+}
+.reviewer {
+   width: 75px;
+   height: 75px;
+   object-fit: cover;
+}
+.quote-icon {
+   font-size: 74px;
+   color: #f58d17;
+   line-height: 1;
+}
+.stars {
+   color: #f58d17;
+}
+.carousel-indicators {
+   margin-bottom: -3rem;
+}
+.form-control {
+   border-radius: 0;
+}
+.form-control:focus {
+   box-shadow: none;
+   border-color: #f58d17;
+}
+input .form-control{
+   height: 47px;
+}
+.insta-post {
+   position: relative;
+   overflow: hidden;
+}
+.insta-btn{
+   width: 90px;
+   height: 90px;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 26px;
+   transform: translate(-50%,-50%);
+   opacity: 0;
+}
+.pic {
+   transition: all 0.4s;
+}
+.pic:hover {
+   transform: scale(1.2);
+}
+.insta-post:hover .insta-btn{
+   opacity: 1;
+}
+.taste {
+   width: 40%;
+   object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+   .taste {
+      width: 100%;
+   }
+   .blog-post {
+      flex-direction: column;
+   }
+}
+
+footer {
+      background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(clents.avif);
+      padding-top: 120px;
+      padding-bottom: 30px;
+}
+.footer-top {
+   margin-bottom: 30px;
+}
+footer p,
+footer a {
+   color: rgba(255,255,255,0.75);
+}
+.bck {
+   max-width: 170px;
+}
+footer a {
+   font-weight: normal;
+   font-size: 24px;
+   margin-right: 10px;
+}
+.footer-bottom{
+   padding-top: 30px;
+   border-top: 2px solid rgba(255,255,255,0.1);
+}
